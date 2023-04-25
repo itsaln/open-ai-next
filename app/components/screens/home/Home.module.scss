@@ -1,0 +1,8 @@
+.hero {
+  .title {
+    @apply font-bold text-5xl text-center mb-4;
+  }
+  .description {
+    @apply text-2xl text-center mb-4;
+  }
+}

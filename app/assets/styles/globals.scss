@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'fonts';
+
+* {
+  @apply box-border;
+}
+
+html {
+  @apply overflow-y-auto;
+
+  &::-webkit-scrollbar {
+    @apply w-1 h-1;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    @apply bg-black;
+  }
+
+  &::-webkit-scrollbar-track {
+    @apply bg-white;
+  }
+}
+
+body {
+  @apply bg-white text-base text-black leading-[26px];
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  @apply text-[inherit] no-underline;
+}
+
+button, input {
+  @apply border-0 rounded-none shadow-none appearance-none outline-0;
+}
+
+.custom-scroll {
+  @apply overflow-y-auto;
+
+  &::-webkit-scrollbar {
+    @apply w-1 h-1;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    @apply bg-black bg-opacity-50;
+  }
+
+  &::-webkit-scrollbar-track {
+    @apply bg-black bg-opacity-10;
+  }
+
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      @apply bg-opacity-60;
+    }
+  }
+}
+
+.container {
+  @apply px-2;
+
+  @media (min-width: 1024px) {
+    @apply px-4;
+  }
+  @media (max-width: 1280px) {
+    max-width: calc(100% - 2rem);
+  }
+  @media (max-width: 640px) {
+    max-width: calc(100% - 1rem);
+  }
+}
