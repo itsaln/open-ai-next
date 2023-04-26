@@ -1,0 +1,25 @@
+.field {
+  @apply relative w-full h-12 mb-5;
+
+  label {
+    @apply absolute text-sm leading-5 top-1/2 -translate-y-1/2 pointer-events-none transition-all;
+
+    &.full {
+      transform: scale(0.7) translate3d(-10px, -47px, 1px);
+    }
+  }
+
+  input {
+    @apply absolute bg-transparent border-b border-gray-400/30 leading-5 inset-0 transition-colors;
+
+    &:focus, &:active {
+      & + label {
+        transform: scale(0.7) translate3d(-10px, -47px, 1px);
+      }
+    }
+  }
+}
+
+.error {
+  @apply absolute text-[10px] leading-4 text-red-600 left-0 -bottom-4 pointer-events-none opacity-0 transition-opacity;
+}

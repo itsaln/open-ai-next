@@ -1,0 +1,15 @@
+.nav {
+  @apply ml-auto;
+
+  > ul {
+    @apply flex flex-nowrap items-center mx-3 xl:-mx-5;
+
+    > li {
+      @apply px-3 xl:px-5;
+
+      > a {
+        @apply text-sm transition-opacity hover:opacity-70;
+      }
+    }
+  }
+}

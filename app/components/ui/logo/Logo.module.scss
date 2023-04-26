@@ -1,0 +1,7 @@
+.logo {
+  @apply inline-block mr-auto;
+
+  > img {
+    @apply w-[110px] h-[49px];
+  }
+}

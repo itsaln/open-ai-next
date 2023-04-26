@@ -10,9 +10,19 @@ module.exports = {
 	theme: {
 		colors: {
 			white: colors.white,
-			black: colors.black
+			black: colors.black,
+			gray: colors.gray,
+			red: colors.red,
+			transparent: colors.transparent
 		},
-		extend: {},
+		extend: {
+			fontSize: {},
+			zIndex: {
+				1: '1',
+				2: '2',
+				3: '3'
+			}
+		},
 		keyframes: {},
 		container: {
 			center: true,
@@ -56,9 +66,70 @@ module.exports = {
 					'-webkit-box-orient': 'vertical',
 					textOverflow: 'ellipsis',
 					overflow: 'hidden'
+				},
+
+				'.btn-black': {
+					display: 'inline-block',
+					width: 'max-content',
+					minWidth: 170,
+					height: 47,
+					backgroundColor: theme('colors.black'),
+					borderWidth: 1,
+					borderColor: theme('colors.black'),
+					borderStyle: 'solid',
+					borderRadius: 0,
+					fontSize: 14,
+					fontWeight: 700,
+					lineHeight: 0.8,
+					letterSpacing: 2,
+					color: theme('colors.white'),
+					textTransform: 'uppercase',
+					padding: '18px 32px',
+					transition: 'opacity .2s ease',
+					'&:hover': {
+						opacity: 0.7
+					}
+				},
+				'.btn-white': {
+					display: 'inline-block',
+					width: 'max-content',
+					minWidth: 170,
+					height: 47,
+					backgroundColor: theme('colors.white'),
+					borderWidth: 1,
+					borderColor: theme('colors.white'),
+					borderStyle: 'solid',
+					borderRadius: 0,
+					fontSize: 14,
+					fontWeight: 700,
+					lineHeight: 0.8,
+					letterSpacing: 2,
+					color: theme('colors.black'),
+					textTransform: 'uppercase',
+					padding: '18px 32px',
+					transition: 'opacity .2s ease',
+					'&:hover': {
+						opacity: 0.7
+					}
 				}
 			})
-			addUtilities({})
+			addUtilities({
+				// '.transition-colors': {
+				// 	transitionProperty:
+				// 		'color, background-color, border-color, text-decoration-color, fill, stroke',
+				// 	transitionTimingFunction: 'ease',
+				// 	transitionDuration: '.5s'
+				// },
+				// '.transition-opacity': {
+				// 	transition: 'opacity .5s ease'
+				// },
+				// '.transition-all': {
+				// 	transition: 'all .3s ease'
+				// },
+				// '.pointer-events-all': {
+				// 	pointerEvents: 'all'
+				// }
+			})
 		})
 	]
 }

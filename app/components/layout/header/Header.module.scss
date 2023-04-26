@@ -1,3 +1,11 @@
 .header {
-  @apply py-4;
+  @apply absolute flex flex-col top-0 left-0 right-0 z-1 py-4;
+
+  .wrapper {
+    @apply flex items-center;
+  }
+
+  .link {
+    @apply text-xl text-white/80 hover:text-white transition-colors;
+  }
 }

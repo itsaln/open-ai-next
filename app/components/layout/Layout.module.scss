@@ -1,1 +1,7 @@
-.layout {}
+.layout {
+  @apply relative;
+
+  .content {
+    //@apply pt-[91px];
+  }
+}

@@ -1,8 +1,27 @@
 .hero {
+  @apply relative min-h-screen bg-no-repeat bg-center bg-cover flex flex-col justify-center z-0 pt-[91px] pb-[80px];
+
+  &::after {
+    @apply content-[''] absolute w-full h-full inset-0 -z-1 pointer-events-none;
+    background: linear-gradient(0deg, rgba(28, 28, 28, .6) 0%, rgba(28, 28, 28, .4) 50%, rgba(28, 28, 28, .6) 100%);
+  }
+
   .title {
-    @apply font-bold text-5xl text-center mb-4;
+    @apply font-bold text-5xl text-white text-center mb-2;
   }
   .description {
-    @apply text-2xl text-center mb-4;
+    @apply text-xl text-white text-center mb-6;
+  }
+
+  .form {
+    @apply max-w-[700px] backdrop-blur-md border border-white/10 rounded-lg shadow shadow-white/30 text-white py-10 px-7 mx-auto mt-16 mb-8;
+
+    > button {
+      @apply block mx-auto mt-9;
+    }
+  }
+
+  .result {
+    @apply backdrop-blur-md border border-white/10 rounded-lg shadow shadow-white/30 text-white py-10 px-7;
   }
 }

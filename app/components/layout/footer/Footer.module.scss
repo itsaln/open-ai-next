@@ -1,3 +1,31 @@
 .footer {
-  @apply py-4;
+  @apply absolute bottom-0 left-0 right-0 text-white/90 z-1 py-6;
+
+  .footer_bottom {
+    @apply flex flex-wrap flex-col lg:flex-row items-center lg:items-end xl:items-center;
+
+    .logo_text {
+      @apply order-3 lg:order-1 text-sm lg:mr-auto xl:mr-24;
+    }
+
+    .bottom_menu {
+      @apply order-2 lg:order-3 xl:order-2 flex flex-nowrap items-center lg:ml-auto xl:ml-0 mb-4 xl:mb-0;
+
+      > span {
+        @apply inline-block text-sm;
+      }
+
+      > ul {
+        @apply flex flex-nowrap items-center -mx-2 xl:-mx-4;
+
+        > li {
+          @apply px-2 xl:px-4;
+
+          > a {
+            @apply text-sm transition-opacity hover:opacity-70;
+          }
+        }
+      }
+    }
+  }
 }
