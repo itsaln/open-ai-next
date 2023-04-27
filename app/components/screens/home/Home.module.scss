@@ -3,7 +3,7 @@
 
   &::after {
     @apply content-[''] absolute w-full h-full inset-0 -z-1 pointer-events-none;
-    background: linear-gradient(0deg, rgba(28, 28, 28, .6) 0%, rgba(28, 28, 28, .4) 50%, rgba(28, 28, 28, .6) 100%);
+    background: linear-gradient(0deg, rgba(28, 28, 28, .7) 0%, rgba(28, 28, 28, .5) 50%, rgba(28, 28, 28, .7) 100%);
   }
 
   .title {

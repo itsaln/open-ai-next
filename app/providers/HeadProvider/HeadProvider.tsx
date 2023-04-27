@@ -8,7 +8,7 @@ const HeadProvider: FC<PropsWithChildren> = ({ children }) => {
 	return (
 		<>
 			<NextNProgress
-				color={'#2515E1'}
+				color={'#10A37F'}
 				startPosition={0.3}
 				stopDelayMs={200}
 				height={3}

@@ -9,6 +9,7 @@ module.exports = {
 	],
 	theme: {
 		colors: {
+			primary: '#10A37F',
 			white: colors.white,
 			black: colors.black,
 			gray: colors.gray,
@@ -68,14 +69,14 @@ module.exports = {
 					overflow: 'hidden'
 				},
 
-				'.btn-black': {
+				'.btn-primary': {
 					display: 'inline-block',
 					width: 'max-content',
 					minWidth: 170,
 					height: 47,
-					backgroundColor: theme('colors.black'),
+					backgroundColor: theme('colors.primary'),
 					borderWidth: 1,
-					borderColor: theme('colors.black'),
+					borderColor: theme('colors.primary'),
 					borderStyle: 'solid',
 					borderRadius: 0,
 					fontSize: 14,
@@ -86,29 +87,12 @@ module.exports = {
 					textTransform: 'uppercase',
 					padding: '18px 32px',
 					transition: 'opacity .2s ease',
-					'&:hover': {
-						opacity: 0.7
-					}
-				},
-				'.btn-white': {
-					display: 'inline-block',
-					width: 'max-content',
-					minWidth: 170,
-					height: 47,
-					backgroundColor: theme('colors.white'),
-					borderWidth: 1,
-					borderColor: theme('colors.white'),
-					borderStyle: 'solid',
-					borderRadius: 0,
-					fontSize: 14,
-					fontWeight: 700,
-					lineHeight: 0.8,
-					letterSpacing: 2,
-					color: theme('colors.black'),
-					textTransform: 'uppercase',
-					padding: '18px 32px',
-					transition: 'opacity .2s ease',
-					'&:hover': {
+					'&[disabled], &.disabled': {
+						cursor: 'default',
+						pointerEvents: 'none',
+						opacity: 0.6
+					},
+					'&:not([disabled], .disabled):hover': {
 						opacity: 0.7
 					}
 				}
