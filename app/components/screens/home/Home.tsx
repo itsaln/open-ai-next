@@ -25,7 +25,10 @@ const Home: FC = () => {
 	const { onSubmit, answers, isLoading } = useGetAnswer()
 
 	return (
-		<Meta title='Home' description='This is the portfolio application.'>
+		<Meta
+			title='Home'
+			description='Chat GPT is a revolutionary chatbot application that helps people have more meaningful conversations in their everyday lives.'
+		>
 			<section
 				className={styles.hero}
 				style={{
