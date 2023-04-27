@@ -22,7 +22,7 @@ const Footer: FC = () => {
 							</li>
 						</ul>
 					</div>
-					<SocialMedia className='order-1 lg:order-2 xl:order-3 mx-0 xl:ml-auto mb-6 lg:mb-14 xl:mb-0' />
+					<SocialMedia className='order-1 lg:order-2 xl:order-3 mx-0 xl:ml-auto mb-4 lg:mb-14 xl:mb-0' />
 				</div>
 			</div>
 		</div>

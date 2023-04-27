@@ -2,7 +2,7 @@
   @apply ml-auto;
 
   > ul {
-    @apply flex flex-nowrap items-center mx-3 xl:-mx-5;
+    @apply flex flex-nowrap items-center -mx-3 xl:-mx-5;
 
     > li {
       @apply px-3 xl:px-5;
