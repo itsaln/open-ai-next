@@ -52,7 +52,7 @@ const Home: FC = () => {
 					</form>
 
 					{isLoading ? (
-						<SkeletonLoader height={26} />
+						<SkeletonLoader count={3} height={24} />
 					) : (
 						answers && (
 							<div className={styles.result}>
