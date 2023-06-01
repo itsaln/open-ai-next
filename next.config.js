@@ -13,11 +13,13 @@ const nextConfig = {
 		return [
 			{
 				source: '/api/:path*',
-				destination: 'http://localhost:5200/api/:path*'
+				// destination: 'http://localhost:5200/api/:path*'
+				destination: 'https://open-ai-api.onrender.com/api/:path*'
 			},
 			{
 				source: '/uploads/:path*',
-				destination: 'http://localhost:5200/uploads/:path*'
+				// destination: 'http://localhost:5200/uploads/:path*'
+				destination: 'https://open-ai-api.onrender.com/uploads/:path*'
 			}
 		]
 	}
